@@ -13,3 +13,4 @@ MIT
 
 ## Project status
 This is just an example. You can contact me if you want me to merge your MR
+It is hosted on Github and Windesheim Gitlab
