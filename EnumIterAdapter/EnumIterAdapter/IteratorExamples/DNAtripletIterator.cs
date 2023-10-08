@@ -2,10 +2,10 @@
 namespace org.hbo_ict.examples.EnumaratorIteratorAdapter;
 
 /// <summary>
-///     An iterator to iterate over all possible Fibonacci number
-///     in the scope of a UInt64 (64 bit long unsigned integer)
+///     An iterator to iterate over all possible triplets
+///     in a dna sequense string.
 ///
-///     Fibonacci numbers: https://en.wikipedia.org/wiki/Fibonacci_sequence
+///     DNA sequence triplets: https://www.youtube.com/watch?v=rW8NKvQQ8P4
 ///     Iterator: https://en.wikipedia.org/wiki/Iterator_pattern
 /// </summary>
 public class DNATripletIterator : IIterator<string>

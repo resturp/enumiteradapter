@@ -6,13 +6,13 @@ namespace org.hbo_ict.examples.EnumaratorIteratorAdapter;
 ///     an IIterator to be used for enumaration in an C# foreach()
 ///     control structure.
 ///
-///     The Constructor needs to be injected with a delegate that will
-///     generate a new instance of an iterator over the type T.
+///     The Constructor needs to be injected with a object of
+///     type IIterable<UInt64> that will generate a new instance of 
+///     an iterator over the type T.
 ///
 ///     example: EnumaratorIteratorAdapter<UInt64> numbers =
-///                 new(Numbers.GetNumberIterator);
-///     where Numbers.GetNumberIterator is a function that will create
-///     an IIterator<UInt64>
+///                 new(new NumberIterable());
+///     where NumberIterable() is a class of type IIterable<UInt64>
 /// </summary>
 /// <typeparam name="T">the type of objects to iterate over</typeparam>
 public class EnumaratorIteratorAdapter<T> : IEnumerator<T>
