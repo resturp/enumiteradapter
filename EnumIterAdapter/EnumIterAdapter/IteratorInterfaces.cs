@@ -15,6 +15,13 @@ public interface IIterator<T>
     T next();
 }
 
+/// <summary>
+///     The Iterator should return a resetted Iterator over the collection
+///     You can opt to create 1 class implementing both the Iterator and the Iterable
+///     interface, but be sure to reset the iterator when this method is calles before
+///     returning 'this'.
+/// </summary>
+/// <typeparam name="T">The type of objects we want to iterate over</typeparam>
 public interface IIterable<T>
 {
     IIterator<T> Iterator();

@@ -1,8 +1,7 @@
-﻿using org.hbo_ict.examples.EnumaratorIteratorAdapter;
+﻿global using org.hbo_ict.examples.EnumaratorIteratorAdapter;
 
 //Example "using" directive to simplyfy the use of the EnumaratorIteratorAdapter
 //For usage se dnatriplet example.
-using EnumIterString = org.hbo_ict.examples.EnumaratorIteratorAdapter.EnumarableIterableAdapter<string>;
 
 Console.WriteLine("Fibonacci numbers generator");
 

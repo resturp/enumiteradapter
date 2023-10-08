@@ -18,13 +18,14 @@ namespace org.hbo_ict.examples.EnumaratorIteratorAdapter;
 public class EnumaratorIteratorAdapter<T> : IEnumerator<T>
 {
 
-    public T Current => _current;
+    public T Current => _current = _iterator.next();
     object? IEnumerator.Current => _current;
 
     private IIterable<T> _iterable;
     private IIterator<T> _iterator;
     private T _current;
     private bool _started;
+    private bool _firstTime = true;
 
     public EnumaratorIteratorAdapter(IIterable<T> iterable)
     {
@@ -38,15 +39,14 @@ public class EnumaratorIteratorAdapter<T> : IEnumerator<T>
     {
         if (!_iterator.hasNext()) return false;
         if (!_started) return _started = true;
-        _current = _iterator.next();
         return true;
     }
 
     public void Reset()
     {
         _iterator = _iterable.Iterator();
-        _current = default(T);
-        if (_iterator.hasNext()) _current = _iterator.next();
+        _current = default(T);       
+        //if (_iterator.hasNext()) _current = _iterator.next();
         _started = false;
     }
 }
@@ -62,7 +62,7 @@ public class EnumarableIterableAdapter<T> : IEnumerable<T>
 {
 
     private IIterable<T> _iterable;
-
+    
     public EnumarableIterableAdapter(IIterable<T> iterable)
     {
         _iterable = iterable;
