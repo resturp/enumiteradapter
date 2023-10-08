@@ -1,0 +1,15 @@
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/bin/Debug/net6.0/EnumaratorIteratorAdapter
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/bin/Debug/net6.0/EnumaratorIteratorAdapter.deps.json
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/bin/Debug/net6.0/EnumaratorIteratorAdapter.runtimeconfig.json
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/bin/Debug/net6.0/EnumaratorIteratorAdapter.dll
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/bin/Debug/net6.0/EnumaratorIteratorAdapter.pdb
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.csproj.AssemblyReference.cache
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.AssemblyInfoInputs.cache
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.AssemblyInfo.cs
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.csproj.CoreCompileInputs.cache
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.dll
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/refint/EnumaratorIteratorAdapter.dll
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.pdb
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/EnumaratorIteratorAdapter.genruntimeconfig.cache
+/Users/thomas/Projects/enumiteradapter/EnumIterAdapter/obj/Debug/net6.0/ref/EnumaratorIteratorAdapter.dll
