@@ -1,5 +1,6 @@
 ﻿namespace EnumIterAdapterTests;
 using org.hbo_ict.examples.EnumaratorIteratorAdapter;
+using static System.Net.Mime.MediaTypeNames;
 
 public class Tests
 {
@@ -75,4 +76,20 @@ public class Tests
         Assert.That(result, Is.EqualTo($"{inject}{inject}{inject}"));
     }
 
+    [Test]
+    public void CheckCurrentValueMultipleTimes()
+    {
+        string inject = "ACTC";
+        EnumarableIterableAdapter<string> singleStringSet = new(new DNATripletIterable(inject));
+        IEnumerator<string> singleEnumerator = singleStringSet.GetEnumerator();
+
+        string result = "";
+        while (singleEnumerator.MoveNext())
+        {
+            result += singleEnumerator.Current;
+            result += singleEnumerator.Current;
+        }
+        Assert.That(result, Is.EqualTo("ACTACTCTCCTC"));
+    }
+    
 }

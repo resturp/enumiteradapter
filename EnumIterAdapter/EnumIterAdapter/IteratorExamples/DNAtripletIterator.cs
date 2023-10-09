@@ -1,5 +1,4 @@
-﻿using System;
-namespace org.hbo_ict.examples.EnumaratorIteratorAdapter;
+﻿namespace org.hbo_ict.examples.EnumaratorIteratorAdapter;
 
 /// <summary>
 ///     An iterator to iterate over all possible triplets

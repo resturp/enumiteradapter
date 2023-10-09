@@ -18,17 +18,17 @@ namespace org.hbo_ict.examples.EnumaratorIteratorAdapter;
 public class EnumaratorIteratorAdapter<T> : IEnumerator<T>
 {
 
-    public T Current => _current = _iterator.next();
+    public T Current => _current;
     object? IEnumerator.Current => _current;
 
     private IIterable<T> _iterable;
     private IIterator<T> _iterator;
-    private T _current;
+    private T? _current;
     private bool _started;
-    private bool _firstTime = true;
 
     public EnumaratorIteratorAdapter(IIterable<T> iterable)
     {
+        _iterator = new EmptySetIterator();
         _iterable = iterable;
         Reset();
     }
@@ -38,6 +38,7 @@ public class EnumaratorIteratorAdapter<T> : IEnumerator<T>
     public bool MoveNext()
     {
         if (!_iterator.hasNext()) return false;
+        _current = _iterator.next();
         if (!_started) return _started = true;
         return true;
     }
@@ -45,11 +46,25 @@ public class EnumaratorIteratorAdapter<T> : IEnumerator<T>
     public void Reset()
     {
         _iterator = _iterable.Iterator();
-        _current = default(T);       
-        //if (_iterator.hasNext()) _current = _iterator.next();
+        _current = default; 
         _started = false;
     }
+
+    internal class EmptySetIterator : IIterator<T>
+    {
+        public bool hasNext()
+        {
+            return false;
+        }
+
+        public T next()
+        {
+            throw new IndexOutOfRangeException();
+        }
+    }
+
 }
+
 
 /// <summary>
 ///     EnumarableIterableAdapter is an adapter that will allow
