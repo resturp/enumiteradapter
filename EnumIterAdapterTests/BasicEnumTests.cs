@@ -1,14 +1,8 @@
 ﻿namespace EnumIterAdapterTests;
 using org.hbo_ict.examples.EnumaratorIteratorAdapter;
-using static System.Net.Mime.MediaTypeNames;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     [Test]
     public void IterateOverAnEmptySet()
     {
